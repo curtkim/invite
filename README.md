@@ -1,0 +1,1 @@
+Copy from http://www.itscard.co.kr/mobile/m/index_typ14.html
