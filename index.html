@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>김상균 & 정희린</title>
+
+<meta property="og:url" content="https://curtkim.github.com/invite/">
+<meta property="og:title" content="김상균 & 정희린 청첩장">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://curtkim.github.com/invite/photo/main3.png">
+<meta property="og:description" content="김상균 & 정희린 청첩장">
+<meta name="description" content="김상균 & 정희린 청첩장">
+<meta name="keywords" content="김상균,정희린,청첩장">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi" />
-<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.js"></script> 
+
+<title>김상균 & 정희린 청첩장</title>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f63d29b9d5005554ca0c8ecdb0d022f6"></script>
 <link href="css/index_new01.css" rel="stylesheet" type="text/css" />
 <script src="js/index_new_script.js"></script>
@@ -79,7 +88,7 @@
           <li data-thumb="photo2/IMG_5492.jpg"><img src="photo2/IMG_5492.jpg" style="height:100%"/></li>
           <li data-thumb="photo2/IMG_5506.jpg"><img src="photo2/IMG_5506.jpg" style="height:100%"/></li>
         </ul>
-      </div>          
+      </div>
     </div>
     <!--video-->
     <div id="menu4" class="section4">
@@ -106,7 +115,7 @@
   </div>
 </div>
 
-<script type="text/javascript"> 
+<script type="text/javascript">
   var container = document.getElementById('map_canvas'); //지도를 담을 영역의 DOM 레퍼런스
   var options = { //지도를 생성할 때 필요한 기본 옵션
     center: new daum.maps.LatLng(37.522380, 126.920692), //지도의 중심좌표.
@@ -115,15 +124,10 @@
 
   var map = new daum.maps.Map(container, options); //지도 생성 및 객체 리턴
 
-  // 마커가 표시될 위치입니다 
-  var markerPosition  = new daum.maps.LatLng(37.522116, 126.920834); 
-
-  // 마커를 생성합니다
+  var markerPosition  = new daum.maps.LatLng(37.522116, 126.920834);
   var marker = new daum.maps.Marker({
       position: markerPosition
   });
-
-  // 마커가 지도 위에 표시되도록 설정합니다
   marker.setMap(map);  
 
 
@@ -133,8 +137,6 @@
       new daum.maps.LatLng(37.522831, 126.922508),
       new daum.maps.LatLng(37.521967, 126.920973) 
   ];
-
-  // 지도에 표시할 선을 생성합니다
   var polyline = new daum.maps.Polyline({
       path: linePath, // 선을 구성하는 좌표배열 입니다
       strokeWeight: 5, // 선의 두께 입니다
@@ -142,8 +144,6 @@
       strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
       strokeStyle: 'dashed' // 선의 스타일입니다
   });
-
-  // 지도에 선을 표시합니다 
   polyline.setMap(map);  
 
 </script>
